@@ -1,0 +1,135 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+  font-size: 1.5rem;
+  background-color: maroon;
+  color: whitesmoke;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  padding: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ navbar a:hover {
+   background-color: #000;
+ }
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #000;
+  color: whitesmoke;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+  color: maroon;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5em;
+  color: whitesmoke;
+}
+
+.projects-section {
+  padding: 1em;
+  background-color:#004daa;
+}
+
+.project-grid {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 1250px;
+  gap: 1em;
+
+}
+
+.project-tile {
+  flex-grow: 1;
+  width: 330px;
+}
+
+.contact-section {
+  padding-top: 0.5em;
+  background-color: #000;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.contact-section h2{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-links{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25em;
+}
+
+.contact-details {
+  text-shadow: rgb(23, 25, 26) 2px 2px 1px;
+  font-size: 1.75rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover{
+  transform: translateY(8px);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #000;
+  color: whitesmoke;
+}
+
+@media (min-width: 650px) {
+  .projects-section {
+    margin: 0 auto;
+  }
+
+navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+  }
+}
